@@ -1,0 +1,11 @@
+-- Desbloquea usuario apex con clave vencida
+
+UPDATE Apex_240100.Wwv_Flow_Fnd_User
+    SET ACCOUNT_LOCKED = 'N', Web_Password = '123456'
+    WHERE User_Name = 'RFRIAS'
+    AND Security_Group_Id = 7215945158569183;
+    COMMIT;
+
+
+
+
